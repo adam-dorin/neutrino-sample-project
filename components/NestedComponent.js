@@ -1,4 +1,4 @@
-import { Component } from "../../core/component";
+import { Component } from "neutrino-js/core";
 
 const data = () => ({
     _test: 42

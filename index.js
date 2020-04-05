@@ -1,4 +1,4 @@
-import { Neutrino } from '../core/neutrino';
+import { Neutrino } from 'neutrino-js/core';
 import { FirstComponent } from './components/MyComponent';
 import { SecondComponent } from './components/SecondComponent';
 import { NestedComponent } from './components/NestedComponent';
