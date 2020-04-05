@@ -9,7 +9,9 @@
     cd neutrino
     git clone https://github.com/adam-dorin/neutrino-js.git
     git clone https://github.com/adam-dorin/neutrino-sample-project.git
-    cd neutrino-sample-project
+    cd neutrino-js
+    npm install
+    cd ../neutrino-sample-project
     npm install
     npm link ../neutrino-js
     npm start
