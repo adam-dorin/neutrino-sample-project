@@ -10,6 +10,9 @@ const onCreate = function() {
 
 export const SecondComponent = () => Component('second-component',{
     data:{ ...data() },
+    children:[
+        'nested-component'
+    ],
     methods: {},
     hooks: {
         onCreate: onCreate

@@ -7,9 +7,9 @@ import { NestedComponent } from './components/NestedComponent';
 
 const app = new Neutrino({
     components:[
+        NestedComponent,
         FirstComponent,
-        SecondComponent,
-        NestedComponent
+        SecondComponent
     ],
     services: []
 })
