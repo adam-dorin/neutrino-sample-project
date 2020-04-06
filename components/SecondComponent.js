@@ -1,4 +1,4 @@
-import { Component } from "neutrino-js/core";
+import { Component } from "spanjs/core";
 
 const data = () => ({
     test: 42,

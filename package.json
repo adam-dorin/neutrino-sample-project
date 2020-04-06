@@ -1,7 +1,7 @@
 {
-  "name": "neutrino-test-room",
+  "name": "spanjs-sample-project",
   "version": "0.0.2",
-  "description": "Test env for neutrinoJS",
+  "description": "Test env for spanjs",
   "main": "index.js",
   "scripts": {
     "webpack-dev-server": "webpack-dev-server --config webpack.config.js",
