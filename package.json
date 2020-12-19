@@ -13,7 +13,7 @@
     "analize": "webpack --profile --json > stats.json",
     "start-php": "php -S localhost:9000",
     "gzip-e": "gzip -9 -c public/main.bundle.js public/runtime.bundle.js | wc -c | numfmt --to=iec-i --suffix=B --padding=10",
-    "cat-e": "cat public//main.bundle.js public/runtime.bundle.js | wc -c | numfmt --to=iec-i --suffix=B --padding=10",
+    "cat-e": "cat public/main.bundle.js public/runtime.bundle.js | wc -c | numfmt --to=iec-i --suffix=B --padding=10",
     "move-resources": "node ./resource-parser.js",
     "compare": "npm run build-prod && npm run cat-e && npm run gzip-e"
   },
