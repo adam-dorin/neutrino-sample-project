@@ -14,12 +14,19 @@ const onCreate = function() {
             this.count--;
         }
     },10);
-    this.component.emitter.sendTo('nested-component',{test:'trolololo'})
+    this.component.sendMessageTo('nested-component',{test:'trolololo'})
+    this.est('est is test OMEGALOL')
 };
+
+const testLol = function(params) {
+    console.log(params, this.test);
+}
 
 export const FirstComponent = () => Component('my-component',{
     data:{ ...data() },
-    methods: {},
+    methods: {
+        est: testLol
+    },
     hooks: {
         onCreate: onCreate
     }
