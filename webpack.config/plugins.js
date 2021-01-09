@@ -5,10 +5,11 @@ const webpack = require('webpack');
 const path = require('path');
 
 module.exports = (production)=>{
+  console.log('isProduction',production)
   return [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname,'../index.html'),
-      minify:false,
+      minify:production,
       inject: true,
       appMountId: 'app',
     }),

@@ -1,9 +1,10 @@
 const path = require('path');
-const isProduction = false;
+var isProduction = false;
 
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const config = env => {
- 
+
+ isProduction = env.production;
   var configuration =  {
     // webpack-dev-server configuration
     mode:'development',
@@ -15,8 +16,8 @@ const config = env => {
       path.resolve(__dirname,'index.js'),
     ],
     output: {
-      filename: '[name].bundle.js',
-      chunkFilename: '[name].bundle.js',
+      filename: `[${isProduction?'chunkhash':'name'}].bundle.js`,
+      chunkFilename: `[${isProduction?'chunkhash':'name'}].bundle.js`,
       path: path.resolve(__dirname,'public')
     },
   }
